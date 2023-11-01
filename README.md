@@ -2,6 +2,9 @@
 
 一个使用 maven 工具的 RestAssured 演示项目
 
+测试框架：TestNG
+测试报告：allure
+
 **中文** | [English](/README_EN.md)
 
 
@@ -13,7 +16,8 @@
 ## 技术栈
 - RestAssured
 - TestNG
-- Maven
+- Maven 
+- allure
 - Github action
 
 ## 项目运行

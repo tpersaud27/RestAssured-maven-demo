@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 @Feature("Verify that the Get and POST API returns correctly")
 public class TestDemo {
 
-    @Test(description = "To get the details of post with id 1", priority = 0)
+    @Test(description = "To get the details of post with id 1", priority = 1)
     @Story("GET Request with Valid post id")
     @Severity(SeverityLevel.NORMAL)
     @Description("Test Description : Verify that the GET API returns correctly")
@@ -36,7 +36,7 @@ public class TestDemo {
                 .body("body", equalTo("quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"));
     }
 
-    @Test(description = "To create a new post", priority = 1)
+    @Test(description = "To create a new post", priority = 2)
     @Story("POST Request")
     @Severity(SeverityLevel.NORMAL)
     @Description("Test Description : Verify that the post API returns correctly")
