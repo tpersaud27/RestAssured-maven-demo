@@ -21,16 +21,19 @@ jobs:
         cache: maven
         
     - name: Build and Run REST Assured Tests with Maven
-      run: mvn test
-      
-    - name: Archive REST-Assured results
-      uses: actions/upload-artifact@v3
-      with:
-        name: REST-Assured-results
-        path: target/surefire-reports
+      run: mvn clean test
 
-    - name: Upload REST-Assured results to GitHub
+    - name: Run REST Assured Tests and Generate Allure Report
+      run: mvn clean test
+      
+    - name: Archive REST-Assured Allure test report
       uses: actions/upload-artifact@v3
       with:
         name: REST-Assured-results
-        path: target/surefire-reports
+        path: allure-results
+
+    - name: Upload REST-Assured Allure report to GitHub
+      uses: actions/upload-artifact@v3
+      with:
+        name: REST-Assured-results
+        path: allure-results
