@@ -1,6 +1,9 @@
 # RestAssured-maven-demo
 a RestAssured demo project with maven tool
 
+Test Framework: TestNG
+Test report: allure
+
 **English** | [中文](/README.md)
 
 ## Environment preparation
@@ -13,12 +16,13 @@ a RestAssured demo project with maven tool
 - RestAssured
 - TestNG
 - Maven
+- allure
 - Github action
 
 ## How to run
 
 ```bash
-mvn test  
+mvn test
 ```
 
 ## Add API Test case
