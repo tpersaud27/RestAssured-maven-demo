@@ -29,13 +29,13 @@ jobs:
       run: mvn clean test
       
     - name: Archive REST-Assured Allure test report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-pages-artifact@v3
       with:
         name: REST-Assured-results
         path: allure-results
 
     - name: Upload REST-Assured Allure report to GitHub
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-pages-artifact@v3
       with:
         name: REST-Assured-results
         path: allure-results
